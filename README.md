@@ -1,4 +1,4 @@
-# TAD Fila com Merge
+# TAD Fila com Merge (Fila.java)
 
 Implementação de um **Tipo Abstrato de Dados (TAD) Fila** em Java, utilizando um vetor de tamanho fixo para armazenar elementos inteiros. O código permite inserir, remover, consultar e imprimir elementos, além de unir duas filas ordenadas por meio do método **merge**.
 
@@ -88,7 +88,7 @@ Em seguida, são inseridos valores ordenados nas filas **a** e **b**. O programa
 
 Ao final, a fila **r** contém os valores das duas filas em ordem crescente, enquanto as filas de origem estão vazias.
 
-# Árvore Binária de Morse (ABM)
+# Árvore Binária de Morse (ABM) (Main.java)
 
 Árvore Binária de Morse implementada em Java, permitindo armazenar caracteres associados a sequências de **pontos (.)** e **traços (-)**. 
 Nesse código é possível: inserir e buscar caracteres, encontrar a sequência correspondente a um caractere e visualizar a árvore de forma horizontal.
