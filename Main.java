@@ -129,15 +129,21 @@ class ABM {
         if (resultado == null) {
             return "Caractere não encontrado na árvore";
         }
-        return "Sequência encontrada para: " + c + " " + resultado;
+        return "Sequência encontrada para " + c + ": " + resultado;
     }
-
     private String buscarChar(No no, char c, String caminho) {
-        if (no == null) {return null;}
-        if (no.info == c) {return caminho;}
+        if (no == null) {
+            return null;
+        }
+        
+        if (no.info == c) {
+            return caminho;
+        }
 
-        String r = buscarChar(no.esquerda, c, caminho + ".");
-        if (r != null) {return r;}
+        String sqn_esq = buscarChar(no.esquerda, c, caminho + ".");
+        if (sqn_esq != null) {
+            return sqn_esq;
+        }
 
         return buscarChar(no.direita, c, caminho + "-");
     }
